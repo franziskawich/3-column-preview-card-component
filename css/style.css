@@ -1,114 +1,177 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 10 version
+*/
+
 :root {
   --orange: hsl(31, 77%, 52%);
   --cyan: hsl(184, 100%, 22%);
   --dark-cyan: hsl(179, 100%, 13%);
   --transparent-white: hsla(0, 0%, 100%, 0.75);
-  --grey: hsl(0, 0%, 95%); }
+  --grey: hsl(0, 0%, 95%);
+}
 
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
 *,
 *::after,
 *::before {
-  box-sizing: inherit; }
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+}
 
 body {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   min-height: 100vh;
   background-color: var(--grey);
   font-family: 'Lexend Deca', sans-serif;
-  font-size: 1.5rem; }
-  @media only screen and (min-width: 56.5em) {
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      align-content: center; } }
+  font-size: 1.5rem;
+}
+@media only screen and (min-width: 56.5em) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+    align-content: center;
+  }
+}
 
 .container {
   max-width: 90%;
-  margin: 8rem auto 0; }
-  @media only screen and (min-width: 28.1em) and (max-width: 56.5em) {
-    .container {
-      max-width: 45rem; } }
-  @media only screen and (min-width: 56.5em) {
-    .container {
-      display: flex;
-      justify-content: center;
-      margin: unset;
-      flex: 0 0 100%; } }
+  margin: 8rem auto 0;
+}
+@media only screen and (min-width: 28.1em) and (max-width: 56.5em) {
+  .container {
+    max-width: 45rem;
+  }
+}
+@media only screen and (min-width: 56.5em) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: unset;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
 
 .card {
-  padding: 6rem 5rem; }
-  @media only screen and (min-width: 28.1em) and (max-width: 56.5em) {
-    .card__img {
-      vertical-align: text-bottom; } }
+  padding: 6rem 5rem;
+}
+@media only screen and (min-width: 28.1em) and (max-width: 56.5em) {
+  .card__img {
+    vertical-align: text-bottom;
+  }
+}
+.card__heading {
+  font-family: 'Big Shoulders Display', cursive;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--grey);
+  margin: 3rem 0;
+}
+@media only screen and (min-width: 28.1em) and (max-width: 56.5em) {
   .card__heading {
-    font-family: 'Big Shoulders Display', cursive;
-    text-transform: uppercase;
-    font-size: 4rem;
-    font-weight: 700;
-    color: var(--grey);
-    margin: 3rem 0; }
-    @media only screen and (min-width: 28.1em) and (max-width: 56.5em) {
-      .card__heading {
-        display: inline;
-        margin-left: 1rem; } }
+    display: inline;
+    margin-left: 1rem;
+  }
+}
+.card__info-text {
+  line-height: 1.8;
+  color: var(--transparent-white);
+  margin-bottom: 5rem;
+}
+@media only screen and (min-width: 28.1em) and (max-width: 56.5em) {
   .card__info-text {
-    line-height: 1.8;
-    color: var(--transparent-white);
-    margin-bottom: 5rem; }
-    @media only screen and (min-width: 28.1em) and (max-width: 56.5em) {
-      .card__info-text {
-        margin-top: 2rem; } }
-    @media only screen and (min-width: 56.5em) {
-      .card__info-text {
-        max-width: 25ch;
-        margin-bottom: 10rem; } }
-  .card__link {
-    background-color: var(--grey);
-    padding: 1em 2em;
-    border-radius: 5rem;
-    text-decoration: none; }
-    .card__link:hover, .card__link:focus {
-      background-color: transparent;
-      color: var(--grey);
-      border: 1px solid var(--grey); }
-    .card__link--1 {
-      color: var(--orange); }
-    .card__link--2 {
-      color: var(--cyan); }
-    .card__link--3 {
-      color: var(--dark-cyan); }
+    margin-top: 2rem;
+  }
+}
+@media only screen and (min-width: 56.5em) {
+  .card__info-text {
+    max-width: 25ch;
+    margin-bottom: 10rem;
+  }
+}
+.card__link {
+  background-color: var(--grey);
+  padding: 1em 2em;
+  border-radius: 5rem;
+  text-decoration: none;
+}
+.card__link:hover,
+.card__link:focus {
+  background-color: transparent;
+  color: var(--grey);
+  border: 1px solid var(--grey);
+}
+.card__link--1 {
+  color: var(--orange);
+}
+.card__link--2 {
+  color: var(--cyan);
+}
+.card__link--3 {
+  color: var(--dark-cyan);
+}
+.card--1 {
+  background-color: var(--orange);
+  border-radius: 0.8rem 0.8rem 0 0;
+}
+@media only screen and (min-width: 56.5em) {
   .card--1 {
-    background-color: var(--orange);
-    border-radius: 0.8rem 0.8rem 0 0; }
-    @media only screen and (min-width: 56.5em) {
-      .card--1 {
-        border-radius: 0.8rem 0 0 0.8rem; } }
-  .card--2 {
-    background-color: var(--cyan); }
+    border-radius: 0.8rem 0 0 0.8rem;
+  }
+}
+.card--2 {
+  background-color: var(--cyan);
+}
+.card--3 {
+  background-color: var(--dark-cyan);
+  border-radius: 0 0 0.8rem 0.8rem;
+}
+@media only screen and (min-width: 56.5em) {
   .card--3 {
-    background-color: var(--dark-cyan);
-    border-radius: 0 0 0.8rem 0.8rem; }
-    @media only screen and (min-width: 56.5em) {
-      .card--3 {
-        border-radius: 0 0.8rem 0.8rem 0; } }
+    border-radius: 0 0.8rem 0.8rem 0;
+  }
+}
 
 .attribution {
   font-size: 1.2rem;
   text-align: center;
   padding: 2rem;
-  line-height: 1.8; }
-  .attribution__link {
-    color: var(--orange);
-    text-decoration: none; }
-    .attribution__link:hover {
-      color: var(--dark-cyan);
-      border-bottom: 0.3rem solid var(--orange); }
+  line-height: 1.8;
+}
+.attribution__link {
+  color: var(--orange);
+  text-decoration: none;
+}
+.attribution__link:hover {
+  color: var(--dark-cyan);
+  border-bottom: 0.3rem solid var(--orange);
+}
+

@@ -20,7 +20,10 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 ### The challenge
 
-- Build out the project to the designs provided
+Users should be able to:
+
+- View the optimal layout depending on their device's screen size
+- See hover states for interactive elements
 
 ### Screenshot
 
@@ -43,28 +46,36 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 ### What I learned
 
-I learned how to include two background images at once and how to position both of the images with the help of the background-position property.
+media query with two breakpoints.
 
 ```css
-body {
-  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
-  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+@media only screen and (min-width: 28.1em) and (max-width: 56.5em) {
+  .card__heading {
+    display: inline;
+    margin-left: 1rem;
   }
 ```
 
-I realized that it is a little bit easier to use hsl color values instead of rgba when needing a darker or lighter version of a current color.
+vertical align text-bottom, ch unit
 
-Although I did not use it in the challenge, I found out about the shorthand property place-items (align-items, justify-items).
+
+```css
+{
+  display: flex;
+  flex: 0 0 100%;
+  }
+```
+
 
 
 ### Continued development
 
-I had some problems with centering the user image. I ended up using flexbox and transform, but I'm not sure if this is the best solution. I used vh and vw units several times and it worked fine, but I think I should use them more often to know when it is right to use them. I read somewhere that they are more associated with typography.
+Zoom attribution
 
 
 ### Useful resources
 
-- [CSS-Tricks: Using multiple backgrounds](https://css-tricks.com/css-basics-using-multiple-backgrounds/) - This helped me with including two background images.
+- [MDN: Vertical-align](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align) - This helped me with ...
 
 
 ## Author

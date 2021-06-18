@@ -46,7 +46,7 @@ Users should be able to:
 
 ### What I learned
 
-media query with two breakpoints.
+I learned that it is possible to create a media query with two breakpoints:
 
 ```css
 @media only screen and (min-width: 28.1em) and (max-width: 56.5em) {
@@ -56,8 +56,9 @@ media query with two breakpoints.
   }
 ```
 
-vertical align text-bottom, ch unit
+I have found out that the vertical-align property can have the value text-bottom, which was very helpful to align the icons next to my headings like I wanted them to have. I used the ch unit for the first time and probably will use it again because it seems quite practical for some situations.
 
+I had the problem that my attribution was right next to my content but I wanted it to be on the next row. Flex-wrap and a flex-basis of 100% for my content solved the problem. 
 
 ```css
 {
@@ -70,12 +71,12 @@ vertical align text-bottom, ch unit
 
 ### Continued development
 
-Zoom attribution
+After uploading my solution I suddenly saw that when I zoom out in the browser to 80% that my attribution will jump to the first row again. This should not happen. I will check for something like this more thour
 
 
 ### Useful resources
 
-- [MDN: Vertical-align](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align) - This helped me with ...
+- [MDN: Vertical-align](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align) - This helped me with aligning my icons to my headings.
 
 
 ## Author

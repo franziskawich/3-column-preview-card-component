@@ -34,6 +34,7 @@ Users should be able to:
 - Solution URL: [https://github.com/franziskawich/3-column-preview-card-component/](https://github.com/franziskawich/3-column-preview-card-component/)
 - Live Site URL: [https://franziskawich.github.io/3-column-preview-card-component/](https://franziskawich.github.io/3-column-preview-card-component/)
 
+
 ## My process
 
 ### Built with
@@ -56,7 +57,7 @@ I learned that it is possible to create a media query with two breakpoints:
   }
 ```
 
-I have found out that the vertical-align property can have the value text-bottom, which was very helpful to align the icons next to my headings like I wanted them to have. I used the ch unit for the first time and probably will use it again because it seems quite practical for some situations.
+I have found out that the vertical-align property can have the value text-bottom, which was very helpful for aligning the icons next to my headings the way I wanted them. I used the ch unit for the first time and will probably use it again as it seems to be quite practical for some situations.
 
 I had the problem that my attribution was right next to my content but I wanted it to be on the next row. Flex-wrap and a flex-basis of 100% for my content solved the problem. 
 
@@ -67,16 +68,13 @@ I had the problem that my attribution was right next to my content but I wanted 
   }
 ```
 
-
-
 ### Continued development
 
-After uploading my solution I suddenly saw that when I zoom out in the browser to 80% that my attribution will jump to the first row again. This should not happen. I will check for something like this more thour
-
+After uploading my solution I suddenly saw that when I zoom out in the browser to 80% that my attribution will jump to the first row again. This should not happen. I will check for something like this more thoroughly in the future.
 
 ### Useful resources
 
-- [MDN: Vertical-align](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align) - This helped me with aligning my icons to my headings.
+- [MDN: Vertical-align](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align) - This helped me with the alignment of my icons to my headings.
 
 
 ## Author
